@@ -37,7 +37,7 @@ console.log(parsedUrl); // Outputs 'https://example.com'
 ```bash
 npm install  # installs dependencies
 npm test  # runs mocha
-npm run lin  # runs eslint
+npm run lint  # runs eslint
 npm run pretty  # runs prettier
 ```
 
