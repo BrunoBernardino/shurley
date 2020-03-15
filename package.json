@@ -1,6 +1,6 @@
 {
   "name": "shurley",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Validate or fix URLs from user input. People make mistakes!",
   "main": "index.js",
   "repository": {
@@ -31,7 +31,7 @@
   "license": "ISC",
   "devDependencies": {
     "eslint": "6.8.0",
-    "mocha": "7.0.0",
+    "mocha": "7.1.0",
     "prettier": "1.19.1"
   }
 }
