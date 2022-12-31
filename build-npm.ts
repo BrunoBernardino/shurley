@@ -1,4 +1,3 @@
-// ex. scripts/build_npm.ts
 import { build, emptyDir } from 'https://deno.land/x/dnt@0.32.1/mod.ts';
 
 await emptyDir('./npm');
@@ -37,5 +36,4 @@ await build({
   },
 });
 
-// post build steps
 Deno.copyFileSync('README.md', 'npm/README.md');
