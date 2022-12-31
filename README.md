@@ -55,4 +55,4 @@ make test
 
 ## Publishing
 
-Just run `make publish VERSION=x.y.z`, then commit + push.
+Commit, then run `make publish VERSION=x.y.z`, then push.
