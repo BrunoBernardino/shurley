@@ -1,4 +1,4 @@
-const parse = (url) => {
+export const parse = (url: string) => {
   const parsedUrl = url.trim();
 
   // Sometimes people get it right
@@ -21,6 +21,4 @@ const parse = (url) => {
   return `https://${parsedUrl}`;
 };
 
-module.exports = {
-  parse,
-};
+export default { parse };

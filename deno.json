@@ -1,0 +1,25 @@
+{
+  "fmt": {
+    "options": {
+      "useTabs": false,
+      "lineWidth": 120,
+      "indentWidth": 2,
+      "singleQuote": true,
+      "proseWrap": "preserve"
+    },
+    "files": {
+      "exclude": ["./npm"]
+    }
+  },
+  "lint": {
+    "files": {
+      "exclude": ["./npm"]
+    }
+  },
+  "test": {
+    "files": {
+      "exclude": ["./npm"]
+    }
+  },
+  "lock": false
+}

@@ -20,27 +20,39 @@ It has no dependencies, and it's meant to be this simple.
 
 It only has a _single method_: `parse(url: string)` which returns the same string, parsed.
 
+### Deno
+
+```ts
+import shurley from 'https://deno.land/x/shurley@1.0.2/mod.ts';
+
+const parsedUrl = shurley.parse('example.com');
+
+console.log(parsedUrl); // Outputs 'https://example.com'
+```
+
+### Node/NPM
+
 ```bash
-npm install --save shurley
+npm install --save-exact shurley
 ```
 
 ```js
-const shurley = require('shurley');
+const shurley = require('shurley'); // or import shurley from 'shurley';
 
-const parsedUrl = shurley.parse('/example.com');
+const parsedUrl = shurley.parse('example.com');
 
 console.log(parsedUrl); // Outputs 'https://example.com'
 ```
 
 ## Development
 
+Requires `deno`.
+
 ```bash
-npm install  # installs dependencies
-npm test  # runs mocha
-npm run lint  # runs eslint
-npm run pretty  # runs prettier
+make format
+make test
 ```
 
 ## Publishing
 
-Update the version, run tests, then just run `npm publish`.
+Just run `make publish VERSION=x.y.z`, then commit + push.
