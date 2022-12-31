@@ -1,6 +1,6 @@
 # Shurley
 
-[![](https://github.com/BrunoBernardino/shurley/workflows/Run%20Tests/badge.svg)](https://github.com/BrunoBernardino/shurley/actions?workflow=Run+Tests)
+[![](https://github.com/BrunoBernardino/shurley/workflows/Run%20Tests/badge.svg)](https://github.com/BrunoBernardino/shurley/actions?workflow=Run+Tests) [![deno](https://shield.deno.dev/x/shurley)](https://deno.land/x/shurley) [![npm](https://img.shields.io/npm/v/shurley.svg)](https://www.npmjs.com/package/shurley)
 
 > I'll give you the right URL, but [don't call me Shirley!](https://www.youtube.com/watch?v=ixljWVyPby0)
 
@@ -23,7 +23,7 @@ It only has a _single method_: `parse(url: string)` which returns the same strin
 ### Deno
 
 ```ts
-import shurley from 'https://deno.land/x/shurley@1.0.2/mod.ts';
+import shurley from 'https://deno.land/x/shurley@1.0.3/mod.ts';
 
 const parsedUrl = shurley.parse('example.com');
 
@@ -55,4 +55,4 @@ make test
 
 ## Publishing
 
-Commit, then run `make publish VERSION=x.y.z`, then push.
+After committing and pushing, just run `make publish VERSION=x.y.z`.

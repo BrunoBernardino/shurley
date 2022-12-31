@@ -13,3 +13,4 @@ publish:
 	git tag $(VERSION)
 	deno run --allow-read --allow-write --allow-net --allow-run --allow-env build-npm.ts $(VERSION)
 	cd npm && npm publish
+	git push origin --tags
