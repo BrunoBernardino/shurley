@@ -1,25 +1,17 @@
 {
   "fmt": {
-    "options": {
-      "useTabs": false,
-      "lineWidth": 120,
-      "indentWidth": 2,
-      "singleQuote": true,
-      "proseWrap": "preserve"
-    },
-    "files": {
-      "exclude": ["./npm"]
-    }
+    "useTabs": false,
+    "lineWidth": 120,
+    "indentWidth": 2,
+    "singleQuote": true,
+    "proseWrap": "preserve",
+    "exclude": ["./npm"]
   },
   "lint": {
-    "files": {
-      "exclude": ["./npm"]
-    }
+    "exclude": ["./npm"]
   },
   "test": {
-    "files": {
-      "exclude": ["./npm"]
-    }
+    "exclude": ["./npm"]
   },
   "lock": false
 }
