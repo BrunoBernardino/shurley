@@ -1,4 +1,4 @@
-import { equal } from 'https://deno.land/std@0.212.0/assert/equal.ts';
+import { equal } from 'https://deno.land/std@0.217.0/assert/equal.ts';
 
 import shurley from './mod.ts';
 

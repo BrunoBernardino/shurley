@@ -23,7 +23,7 @@ It only has a _single method_: `parse(url: string)` which returns the same strin
 ### Deno
 
 ```ts
-import shurley from 'https://deno.land/x/shurley@1.0.4/mod.ts';
+import shurley from 'https://deno.land/x/shurley@1.0.5/mod.ts';
 
 const parsedUrl = shurley.parse('example.com');
 
