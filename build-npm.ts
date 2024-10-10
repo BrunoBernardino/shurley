@@ -4,10 +4,6 @@ await emptyDir('./npm');
 
 const version = JSON.parse(Deno.readTextFileSync('./deno.json')).version;
 
-const gitTag = new Deno.Command('git', { args: ['tag', version] });
-
-await gitTag.spawn().status;
-
 await build({
   entryPoints: ['./mod.ts'],
   outDir: './npm',
@@ -43,3 +39,7 @@ await build({
 });
 
 Deno.copyFileSync('README.md', 'npm/README.md');
+
+const gitTag = new Deno.Command('git', { args: ['tag', version] });
+
+await gitTag.spawn().status;

@@ -7,6 +7,7 @@ test:
 	deno fmt --check
 	deno lint
 	deno test --check=all
+	deno publish --dry-run --allow-dirty
 
 .PHONY: publish
 publish:
