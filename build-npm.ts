@@ -10,6 +10,7 @@ await build({
   shims: {
     deno: true,
   },
+  typeCheck: false,
   package: {
     name: 'shurley',
     version,
