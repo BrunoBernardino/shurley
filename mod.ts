@@ -1,4 +1,4 @@
-export const parse = (url: string) => {
+export const parse = (url: string): string => {
   const parsedUrl = url.trim();
 
   // Sometimes people get it right

@@ -10,7 +10,7 @@ test:
 
 .PHONY: publish
 publish:
-	git tag $(VERSION)
-	deno run --allow-read --allow-write --allow-net --allow-run --allow-env build-npm.ts $(VERSION)
+	deno run --allow-read --allow-write --allow-net --allow-run --allow-env build-npm.ts
 	cd npm && npm publish
+	deno publish
 	git push origin --tags

@@ -1,6 +1,12 @@
-import { build, emptyDir } from 'https://deno.land/x/dnt@0.40.0/mod.ts';
+import { build, emptyDir } from 'jsr:@deno/dnt@0.41.3';
 
 await emptyDir('./npm');
+
+const version = JSON.parse(Deno.readTextFileSync('./deno.json')).version;
+
+const gitTag = new Deno.Command('git', { args: ['tag', version] });
+
+await gitTag.spawn().status;
 
 await build({
   entryPoints: ['./mod.ts'],
@@ -10,7 +16,7 @@ await build({
   },
   package: {
     name: 'shurley',
-    version: Deno.args[0],
+    version,
     description: 'Validate or fix URLs from user input. People make mistakes!',
     license: 'ISC',
     author: 'Bruno Bernardino <me@brunobernardino.com>',

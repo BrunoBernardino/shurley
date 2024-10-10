@@ -1,6 +1,6 @@
 # Shurley
 
-[![](https://github.com/BrunoBernardino/shurley/workflows/Run%20Tests/badge.svg)](https://github.com/BrunoBernardino/shurley/actions?workflow=Run+Tests) [![deno](https://shield.deno.dev/x/shurley)](https://deno.land/x/shurley) [![npm](https://img.shields.io/npm/v/shurley.svg)](https://www.npmjs.com/package/shurley)
+[![](https://github.com/BrunoBernardino/shurley/workflows/Run%20Tests/badge.svg)](https://github.com/BrunoBernardino/shurley/actions?workflow=Run+Tests) [![deno](https://shield.deno.dev/x/shurley)](https://deno.land/x/shurley) [![npm](https://img.shields.io/npm/v/shurley.svg)](https://www.npmjs.com/package/shurley) [![jsr](https://jsr.io/badges/@brn/shurley)](https://jsr.io/@brn/shurley)
 
 > I'll give you the right URL, but [don't call me Shirley!](https://www.youtube.com/watch?v=ixljWVyPby0)
 
@@ -23,7 +23,7 @@ It only has a _single method_: `parse(url: string)` which returns the same strin
 ### Deno
 
 ```ts
-import shurley from 'https://deno.land/x/shurley@1.0.5/mod.ts';
+import shurley from 'jsr:@brn/shurley@1.0.6'; // or import shurley from 'https://deno.land/x/shurley@1.0.6/mod.ts';
 
 const parsedUrl = shurley.parse('example.com');
 
@@ -55,4 +55,4 @@ make test
 
 ## Publishing
 
-After committing and pushing, just run `make publish VERSION=x.y.z`.
+After committing and pushing with a new version in `deno.json`, just run `make publish`.
