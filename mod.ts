@@ -7,8 +7,6 @@
  * parse("https://example.com") // "https://example.com"
  * parse("ftp://example.com") // "https://example.com"
  * parse("example.com/path") // "https://example.com/path"
- * parse("example.com/path/to/resource") // "https://example.com/path/to/resource"
- * parse("example.com/path/to/resource?query=string") // "https://example.com/path/to/resource?query=string"
  * parse("example.com/path/to/resource?query=string#fragment") // "https://example.com/path/to/resource?query=string#fragment"
  * ```
  *
@@ -42,7 +40,7 @@ export const parse = (url: string): string => {
  * This simply exports the `parse` function as the default export.
  *
  * ```ts
- * import shurley from 'jsr:@brn/shurley@1.0.8'; // or import shurley from 'https://deno.land/x/shurley@1.0.8/mod.ts';
+ * import shurley from 'jsr:@brn/shurley@1.0.9'; // or import shurley from 'https://deno.land/x/shurley@1.0.9/mod.ts';
  *
  * const parsedUrl = shurley.parse('example.com'); // "https://example.com"
  * ```

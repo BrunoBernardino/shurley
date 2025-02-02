@@ -1,4 +1,4 @@
-import { equal } from 'jsr:@std/assert@1.0.8';
+import { assertEquals } from 'jsr:@std/assert@1.0.8';
 
 import shurley from './mod.ts';
 
@@ -34,6 +34,6 @@ Deno.test('that .parse() works', () => {
 
   for (const test of tests) {
     const parsedUrl = shurley.parse(test.url);
-    equal(parsedUrl, test.expected);
+    assertEquals(parsedUrl, test.expected);
   }
 });
