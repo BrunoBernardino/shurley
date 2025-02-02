@@ -1,4 +1,4 @@
-import { equal } from 'jsr:@std/assert@1.0.11';
+import { equal } from 'jsr:@std/assert@1.0.8';
 
 import shurley from './mod.ts';
 
@@ -25,6 +25,11 @@ Deno.test('that .parse() works', () => {
     { url: 'https://example.com/', expected: 'https://example.com/' },
     { url: 'https://example.com/something', expected: 'https://example.com/something' },
     { url: 'git:example.com', expected: 'https://git:example.com' },
+    { url: 'https://example.com/?something=true', expected: 'https://example.com/?something=true' },
+    {
+      url: 'https://example.com/something?something=true#yeah',
+      expected: 'https://example.com/something?something=true#yeah',
+    },
   ];
 
   for (const test of tests) {
