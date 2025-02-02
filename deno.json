@@ -1,6 +1,6 @@
 {
   "name": "@brn/shurley",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "exports": "./mod.ts",
   "fmt": {
     "useTabs": false,

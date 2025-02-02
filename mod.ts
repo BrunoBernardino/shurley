@@ -38,4 +38,13 @@ export const parse = (url: string): string => {
   return `https://${parsedUrl}`;
 };
 
+/**
+ * This simply exports the `parse` function as the default export.
+ *
+ * ```ts
+ * import shurley from 'jsr:@brn/shurley@1.0.8'; // or import shurley from 'https://deno.land/x/shurley@1.0.8/mod.ts';
+ *
+ * const parsedUrl = shurley.parse('example.com'); // "https://example.com"
+ * ```
+ */
 export default { parse };
