@@ -23,9 +23,9 @@ It only has a _single method_: `parse(url: string)` which returns the same strin
 ### Deno
 
 ```ts
-import shurley from 'jsr:@brn/shurley@1.0.8'; // or import shurley from 'https://deno.land/x/shurley@1.0.8/mod.ts';
+import { parse } from 'jsr:@brn/shurley'; // or import shurley from 'https://deno.land/x/shurley@1.0.8/mod.ts';
 
-const parsedUrl = shurley.parse('example.com');
+const parsedUrl = parse('example.com');
 
 console.log(parsedUrl); // Outputs 'https://example.com'
 ```

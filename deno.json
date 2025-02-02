@@ -7,14 +7,12 @@
     "lineWidth": 120,
     "indentWidth": 2,
     "singleQuote": true,
-    "proseWrap": "preserve",
-    "exclude": ["./npm"]
+    "proseWrap": "preserve"
   },
-  "lint": {
-    "exclude": ["./npm"]
-  },
-  "test": {
-    "exclude": ["./npm"]
-  },
-  "lock": false
+  "exclude": ["./npm"],
+  "lock": false,
+  "imports": {
+    "@deno/dnt": "jsr:@deno/dnt@^0.41.3",
+    "@std/assert": "jsr:@std/assert@^1.0.11"
+  }
 }
