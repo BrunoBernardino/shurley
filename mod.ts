@@ -1,3 +1,20 @@
+/**
+ * This function parses a URL from user input (with potential typos in protocols, bad copy+paste, etc.) and returns a proper URL.
+ *
+ * ```ts
+ * parse("example.com") // "https://example.com"
+ * parse("http://example.com") // "http://example.com"
+ * parse("https://example.com") // "https://example.com"
+ * parse("ftp://example.com") // "https://example.com"
+ * parse("example.com/path") // "https://example.com/path"
+ * parse("example.com/path/to/resource") // "https://example.com/path/to/resource"
+ * parse("example.com/path/to/resource?query=string") // "https://example.com/path/to/resource?query=string"
+ * parse("example.com/path/to/resource?query=string#fragment") // "https://example.com/path/to/resource?query=string#fragment"
+ * ```
+ *
+ * @param url - The URL to parse.
+ * @returns The parsed URL.
+ */
 export const parse = (url: string): string => {
   const parsedUrl = url.trim();
 
