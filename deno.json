@@ -1,6 +1,6 @@
 {
   "name": "@brn/shurley",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "exports": "./mod.ts",
   "fmt": {
     "useTabs": false,
@@ -15,6 +15,10 @@
   },
   "test": {
     "exclude": ["./npm"]
+  },
+  "imports": {
+    "@std/assert": "jsr:@std/assert@1.0.19",
+    "@deno/dnt": "jsr:@deno/dnt@0.42.3"
   },
   "lock": false
 }

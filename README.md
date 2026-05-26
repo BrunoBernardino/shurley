@@ -1,12 +1,14 @@
 # Shurley
 
-[![](https://github.com/BrunoBernardino/shurley/workflows/Run%20Tests/badge.svg)](https://github.com/BrunoBernardino/shurley/actions?workflow=Run+Tests) [![deno](https://shield.deno.dev/x/shurley)](https://deno.land/x/shurley) [![npm](https://img.shields.io/npm/v/shurley.svg)](https://www.npmjs.com/package/shurley) [![jsr](https://jsr.io/badges/@brn/shurley)](https://jsr.io/@brn/shurley)
+[![deno](https://shield.deno.dev/x/shurley)](https://deno.land/x/shurley) [![npm](https://img.shields.io/npm/v/shurley.svg)](https://www.npmjs.com/package/shurley) [![jsr](https://jsr.io/badges/@brn/shurley)](https://jsr.io/@brn/shurley)
 
 > I'll give you the right URL, but [don't call me Shirley!](https://www.youtube.com/watch?v=ixljWVyPby0)
 
 Parses URLs from user input (with potential typos in protocols, bad copy+paste, etc.) and returns a proper URL.
 
 It has no dependencies, and it's meant to be this simple.
+
+This repo is originally kept on [GitHub](https://github.com/BrunoBernardino/shurley), and mirrored to [Codeberg](https://codeberg.org/BrunoBernardino/shurley).
 
 ### Some things to note:
 
@@ -23,7 +25,7 @@ It only has a _single method_: `parse(url: string)` which returns the same strin
 ### Deno
 
 ```ts
-import shurley from 'jsr:@brn/shurley@1.0.9'; // or import shurley from 'https://deno.land/x/shurley@1.0.9/mod.ts';
+import shurley from 'jsr:@brn/shurley@1.0.10'; // or import shurley from 'https://deno.land/x/shurley@1.0.10/mod.ts';
 
 const parsedUrl = shurley.parse('example.com');
 
